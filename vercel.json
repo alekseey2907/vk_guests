@@ -1,8 +1,4 @@
 {
-  "framework": null,
-  "buildCommand": null,
-  "installCommand": "echo 'Skipping install - using pre-built dist'",
-  "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VK Гости - Анализатор посетителей страницы ВКонтакте">
+    <title>VK Гости - Анализ посетителей ВКонтакте</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .status {
+            background: #f0f8ff;
+            border-left: 4px solid #4A76A8;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .status h2 {
+            color: #4A76A8;
+            margin-bottom: 15px;
+        }
+
+        .status p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            background: #f9f9f9;
+            padding: 30px 20px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .cta-button {
+            background: #4A76A8;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #3a5f8a;
+        }
+
+        .link {
+            color: #4A76A8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 VK Гости</h1>
+        <p class="subtitle">Анализ посетителей страницы ВКонтакте</p>
+
+        <div class="status">
+            <h2>🚀 Статус деплоя</h2>
+            <p><strong>✅ Веб-версия успешно задеплоена на Vercel!</strong></p>
+            <p>Репозиторий: <a href="https://github.com/alekseey2907/vk_guests" class="link" target="_blank">github.com/alekseey2907/vk_guests</a></p>
+            <p><em>Полная React Native версия доступна через мобильное приложение</em></p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <h3>Анализ гостей</h3>
+                <p>Вероятностный анализ посетителей вашей страницы ВКонтакте</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Статистика</h3>
+                <p>Подробная аналитика и демографические данные</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">⭐</div>
+                <h3>Premium</h3>
+                <p>Расширенные функции и детальные отчеты</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 40px; color: #333;">Как использовать?</h2>
+        <p style="color: #666; margin: 20px 0;">
+            Для полного функционала скачайте мобильное приложение или запустите проект локально:
+        </p>
+        
+        <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: left; margin: 20px 0;">
+            <code style="color: #d63384;">
+                git clone https://github.com/alekseey2907/vk_guests.git<br>
+                cd vk_guests<br>
+                npm install --legacy-peer-deps<br>
+                npm run web
+            </code>
+        </div>
+
+        <a href="https://github.com/alekseey2907/vk_guests" class="cta-button" target="_blank">
+            Открыть на GitHub
+        </a>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #999; font-size: 0.9em;">
+                © 2025 VK Гости | Не аффилирован с ООО "В Контакте"
+            </p>
+        </div>
+    </div>
+</body>
+</html>
