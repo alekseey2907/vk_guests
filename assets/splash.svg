@@ -1,0 +1,74 @@
+<svg width="1284" height="2778" viewBox="0 0 1284 2778" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="splashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A76A8"/>
+      <stop offset="50%" style="stop-color:#5181B8"/>
+      <stop offset="100%" style="stop-color:#6A9BD1"/>
+    </linearGradient>
+    <linearGradient id="personGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#E8EEF5"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Full background -->
+  <rect width="1284" height="2778" fill="url(#splashBg)"/>
+  
+  <!-- Decorative circles in background -->
+  <circle cx="200" cy="400" r="150" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="1100" cy="600" r="200" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="150" cy="2400" r="180" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="1150" cy="2200" r="120" fill="#FFFFFF" opacity="0.05"/>
+  
+  <!-- Main icon group centered -->
+  <g transform="translate(642, 1200)">
+    <!-- Main person (front, larger) -->
+    <g filter="url(#glow)">
+      <!-- Head -->
+      <circle cx="0" cy="-120" r="80" fill="url(#personGrad)"/>
+      <!-- Body -->
+      <path d="M-140 100 Q-140 0 0 0 Q140 0 140 100 L140 160 Q140 190 110 190 L-110 190 Q-140 190 -140 160 Z" fill="url(#personGrad)"/>
+    </g>
+    
+    <!-- Left person (back, smaller) -->
+    <g opacity="0.6" transform="translate(-180, 20)">
+      <!-- Head -->
+      <circle cx="0" cy="-100" r="55" fill="#FFFFFF"/>
+      <!-- Body -->
+      <path d="M-90 60 Q-90 -10 0 -10 Q90 -10 90 60 L90 100 Q90 120 70 120 L-70 120 Q-90 120 -90 100 Z" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- Right person (back, smaller) -->
+    <g opacity="0.6" transform="translate(180, 20)">
+      <!-- Head -->
+      <circle cx="0" cy="-100" r="55" fill="#FFFFFF"/>
+      <!-- Body -->
+      <path d="M-90 60 Q-90 -10 0 -10 Q90 -10 90 60 L90 100 Q90 120 70 120 L-70 120 Q-90 120 -90 100 Z" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- Eye/Watch icon -->
+    <g transform="translate(120, -220)">
+      <circle cx="0" cy="0" r="50" fill="#FFD60A"/>
+      <circle cx="0" cy="0" r="20" fill="#4A76A8"/>
+      <circle cx="-7" cy="-7" r="7" fill="#FFF" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- App name -->
+  <text x="642" y="1550" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    VK Гости
+  </text>
+  
+  <!-- Tagline -->
+  <text x="642" y="1620" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+    Узнай, кто интересуется тобой
+  </text>
+</svg>

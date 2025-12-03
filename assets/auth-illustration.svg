@@ -1,0 +1,106 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Auth screen header illustration -->
+  
+  <defs>
+    <linearGradient id="authBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A76A8"/>
+      <stop offset="50%" style="stop-color:#5181B8"/>
+      <stop offset="100%" style="stop-color:#6A9BD1"/>
+    </linearGradient>
+    <linearGradient id="authPerson" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#E0E8F0"/>
+    </linearGradient>
+    <filter id="authGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#2D4A6B" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#authBg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="700" cy="150" r="120" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="650" cy="500" r="100" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="80" cy="520" r="60" fill="#FFFFFF" opacity="0.05"/>
+  
+  <!-- Phone mockup -->
+  <g transform="translate(400, 300)" filter="url(#softShadow)">
+    <!-- Phone body -->
+    <rect x="-100" y="-180" width="200" height="360" rx="25" fill="#1A1A2E"/>
+    <rect x="-90" y="-170" width="180" height="340" rx="20" fill="#FFF"/>
+    
+    <!-- Screen content -->
+    <rect x="-90" y="-170" width="180" height="340" rx="20" fill="#F5F5F5"/>
+    
+    <!-- Mini profile cards on screen -->
+    <g transform="translate(0, -100)">
+      <!-- Card 1 -->
+      <rect x="-75" y="0" width="150" height="50" rx="8" fill="#FFF" stroke="#E0E0E0"/>
+      <circle cx="-50" cy="25" r="15" fill="#4A76A8"/>
+      <rect x="-25" y="15" width="60" height="8" rx="4" fill="#E0E0E0"/>
+      <rect x="-25" y="28" width="40" height="6" rx="3" fill="#F0F0F0"/>
+      <text x="60" y="30" font-family="Arial" font-size="12" fill="#4CAF50" font-weight="bold">85%</text>
+      
+      <!-- Card 2 -->
+      <rect x="-75" y="60" width="150" height="50" rx="8" fill="#FFF" stroke="#E0E0E0"/>
+      <circle cx="-50" cy="85" r="15" fill="#E8A0BF"/>
+      <rect x="-25" y="75" width="60" height="8" rx="4" fill="#E0E0E0"/>
+      <rect x="-25" y="88" width="40" height="6" rx="3" fill="#F0F0F0"/>
+      <text x="60" y="90" font-family="Arial" font-size="12" fill="#FF9800" font-weight="bold">72%</text>
+      
+      <!-- Card 3 -->
+      <rect x="-75" y="120" width="150" height="50" rx="8" fill="#FFF" stroke="#E0E0E0"/>
+      <circle cx="-50" cy="145" r="15" fill="#4A76A8"/>
+      <rect x="-25" y="135" width="60" height="8" rx="4" fill="#E0E0E0"/>
+      <rect x="-25" y="148" width="40" height="6" rx="3" fill="#F0F0F0"/>
+      <text x="60" y="150" font-family="Arial" font-size="12" fill="#9E9E9E" font-weight="bold">45%</text>
+    </g>
+  </g>
+  
+  <!-- Floating people around -->
+  <!-- Person 1 - left -->
+  <g transform="translate(150, 250)" filter="url(#authGlow)">
+    <circle cx="0" cy="-30" r="35" fill="url(#authPerson)"/>
+    <path d="M-45 40 Q-45 0 0 0 Q45 0 45 40 L45 70 Q45 85 30 85 L-30 85 Q-45 85 -45 70 Z" fill="url(#authPerson)"/>
+    <!-- Question mark -->
+    <text x="0" y="130" font-family="Arial" font-size="32" fill="#FFD60A" text-anchor="middle" font-weight="bold">?</text>
+  </g>
+  
+  <!-- Person 2 - right top -->
+  <g transform="translate(620, 200)" opacity="0.8">
+    <circle cx="0" cy="-25" r="30" fill="#FFF"/>
+    <path d="M-40 35 Q-40 0 0 0 Q40 0 40 35 L40 60 Q40 75 25 75 L-25 75 Q-40 75 -40 60 Z" fill="#FFF"/>
+  </g>
+  
+  <!-- Person 3 - right bottom -->
+  <g transform="translate(650, 420)" opacity="0.7">
+    <circle cx="0" cy="-20" r="25" fill="#FFF"/>
+    <path d="M-35 30 Q-35 0 0 0 Q35 0 35 30 L35 50 Q35 62 22 62 L-22 62 Q-35 62 -35 50 Z" fill="#FFF"/>
+  </g>
+  
+  <!-- Eye icons floating -->
+  <g transform="translate(200, 150)">
+    <circle cx="0" cy="0" r="25" fill="#FFD60A" opacity="0.9"/>
+    <circle cx="0" cy="0" r="10" fill="#4A76A8"/>
+    <circle cx="-3" cy="-3" r="3" fill="#FFF"/>
+  </g>
+  
+  <g transform="translate(580, 380)">
+    <circle cx="0" cy="0" r="20" fill="#FFD60A" opacity="0.8"/>
+    <circle cx="0" cy="0" r="8" fill="#4A76A8"/>
+    <circle cx="-3" cy="-3" r="3" fill="#FFF"/>
+  </g>
+  
+  <!-- Connecting lines (dotted) -->
+  <path d="M200 180 Q300 200 300 300" stroke="#FFD60A" stroke-width="2" stroke-dasharray="5,5" fill="none" opacity="0.5"/>
+  <path d="M580 380 Q500 350 500 300" stroke="#FFD60A" stroke-width="2" stroke-dasharray="5,5" fill="none" opacity="0.5"/>
+</svg>
