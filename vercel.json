@@ -1,8 +1,8 @@
 {
-  "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "npm run build:web",
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": "echo 'Skipping install - using pre-built dist'",
   "outputDirectory": "dist",
-  "devCommand": "npm run web",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [

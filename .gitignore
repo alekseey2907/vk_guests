@@ -7,7 +7,7 @@ node_modules/
 
 # Expo
 .expo/
-dist/
+# dist/ - commented out for Vercel deployment
 web-build/
 
 # Native builds
