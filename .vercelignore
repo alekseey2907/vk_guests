@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+server/node_modules
+
+# Expo
+.expo
+.expo-shared
+
+# Development
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# Git
+.git
+.gitignore
+
+# Documentation (не нужно на production)
+README.md
+DEPLOYMENT.md
+
+# Source files (нужен только dist)
+src
+App.tsx
+babel.config.js
+tsconfig.json

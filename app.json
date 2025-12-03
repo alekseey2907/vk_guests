@@ -34,6 +34,18 @@
     "plugins": [
       "expo-secure-store"
     ],
-    "scheme": "vkguests"
+    "scheme": "vkguests",
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/icon.png",
+      "name": "VK Гости - Анализ посетителей",
+      "shortName": "VK Гости",
+      "description": "Приложение для анализа посетителей страницы ВКонтакте",
+      "themeColor": "#4A76A8",
+      "backgroundColor": "#FFFFFF",
+      "display": "standalone",
+      "orientation": "portrait",
+      "startUrl": "/"
+    }
   }
 }
