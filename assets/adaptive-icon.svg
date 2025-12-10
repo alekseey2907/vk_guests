@@ -1,0 +1,41 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- This is for Android adaptive icon - foreground layer -->
+  <!-- The icon should be centered in safe zone (66% of total) -->
+  
+  <defs>
+    <linearGradient id="personGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#E8EEF5"/>
+    </linearGradient>
+    <filter id="iconShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Main person (front, larger) - centered -->
+  <g transform="translate(512, 480)" filter="url(#iconShadow)">
+    <!-- Head -->
+    <circle cx="0" cy="-80" r="90" fill="url(#personGradient)"/>
+    <!-- Body -->
+    <path d="M-150 120 Q-150 20 0 20 Q150 20 150 120 L150 200 Q150 240 110 240 L-110 240 Q-150 240 -150 200 Z" fill="url(#personGradient)"/>
+  </g>
+  
+  <!-- Left person (back) -->
+  <g transform="translate(280, 500)" opacity="0.7">
+    <circle cx="0" cy="-60" r="60" fill="#FFFFFF"/>
+    <path d="M-90 80 Q-90 10 0 10 Q90 10 90 80 L90 130 Q90 160 60 160 L-60 160 Q-90 160 -90 130 Z" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Right person (back) -->
+  <g transform="translate(744, 500)" opacity="0.7">
+    <circle cx="0" cy="-60" r="60" fill="#FFFFFF"/>
+    <path d="M-90 80 Q-90 10 0 10 Q90 10 90 80 L90 130 Q90 160 60 160 L-60 160 Q-90 160 -90 130 Z" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Eye badge -->
+  <g transform="translate(680, 300)">
+    <circle cx="0" cy="0" r="60" fill="#FFD60A" stroke="#FFF" stroke-width="6"/>
+    <circle cx="0" cy="0" r="25" fill="#4A76A8"/>
+    <circle cx="-8" cy="-8" r="8" fill="#FFF" opacity="0.9"/>
+  </g>
+</svg>

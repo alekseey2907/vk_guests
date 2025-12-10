@@ -1,0 +1,31 @@
+workflows:
+  android-workflow:
+    name: Android Workflow
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        EXPO_TOKEN: $EXPO_TOKEN
+      node: 18.x
+    scripts:
+      - name: Install npm dependencies
+        script: |
+          npm install --legacy-peer-deps
+      - name: Install EAS CLI
+        script: |
+          npm install -g eas-cli
+      - name: Login to Expo
+        script: |
+          echo $EXPO_TOKEN | eas login --non-interactive
+      - name: Build Android APK with EAS
+        script: |
+          eas build --platform android --profile preview --non-interactive
+    artifacts:
+      - '*.apk'
+    publishing:
+      email:
+        recipients:
+          - alekseey2907@example.com
+        notify:
+          success: true
+          failure: true

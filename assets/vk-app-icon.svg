@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- VK Mini App Icon - square format for VK developer cabinet -->
+  
+  <defs>
+    <linearGradient id="vkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A76A8"/>
+      <stop offset="100%" style="stop-color:#5181B8"/>
+    </linearGradient>
+    <linearGradient id="vkPerson" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#E0E8F0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with rounded corners (VK style) -->
+  <rect width="512" height="512" rx="102" fill="url(#vkBg)"/>
+  
+  <!-- Three people silhouettes -->
+  <g transform="translate(256, 240)">
+    <!-- Center person (main) -->
+    <g>
+      <circle cx="0" cy="-50" r="50" fill="url(#vkPerson)"/>
+      <path d="M-75 70 Q-75 10 0 10 Q75 10 75 70 L75 120 Q75 145 50 145 L-50 145 Q-75 145 -75 120 Z" fill="url(#vkPerson)"/>
+    </g>
+    
+    <!-- Left person -->
+    <g opacity="0.65" transform="translate(-100, 20)">
+      <circle cx="0" cy="-35" r="35" fill="#FFF"/>
+      <path d="M-50 45 Q-50 5 0 5 Q50 5 50 45 L50 80 Q50 95 35 95 L-35 95 Q-50 95 -50 80 Z" fill="#FFF"/>
+    </g>
+    
+    <!-- Right person -->
+    <g opacity="0.65" transform="translate(100, 20)">
+      <circle cx="0" cy="-35" r="35" fill="#FFF"/>
+      <path d="M-50 45 Q-50 5 0 5 Q50 5 50 45 L50 80 Q50 95 35 95 L-35 95 Q-50 95 -50 80 Z" fill="#FFF"/>
+    </g>
+  </g>
+  
+  <!-- Eye/View indicator -->
+  <circle cx="380" cy="130" r="45" fill="#FFD60A"/>
+  <circle cx="380" cy="130" r="18" fill="#4A76A8"/>
+  <circle cx="374" cy="124" r="6" fill="#FFF" opacity="0.8"/>
+</svg>
