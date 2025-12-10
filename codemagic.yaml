@@ -6,7 +6,7 @@ workflows:
     environment:
       vars:
         EXPO_TOKEN: $EXPO_TOKEN
-      node: 18.x
+      node: 18
     scripts:
       - name: Install npm dependencies
         script: |
